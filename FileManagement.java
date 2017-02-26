@@ -127,6 +127,7 @@ public class FileManagement {
                 for (i = 0; i < sCurrentLine.length() && sCurrentLine.charAt(i) != '>' ; i++);
                 auxLine= sCurrentLine.substring(0,i-1);
             	if (auxLine.equals(descricao)) {
+                    System.out.println("Sucessfuly deleted the following Event: " + sCurrentLine);
             	} else {
             		bw.write(sCurrentLine + "\n");
             		
