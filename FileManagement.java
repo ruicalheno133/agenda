@@ -8,9 +8,9 @@ import java.lang.String;
 import java.io.File;
 
 public class FileManagement {
-
-	private static String FILENAME = "/Users/ruipedro/Desktop/Agenda/events.txt";
-	private static String FILENAME_AUX = "/Users/ruipedro/Desktop/Agenda/aux.txt";
+    private static String HOME = System.getProperty("user.home");
+	private static String FILENAME = HOME + "/Agenda/events.txt";
+	private static String FILENAME_AUX = HOME + "/Agenda/aux.txt";
 
 	public static void write_On_File (int dia , int mes, int ano , String descricao) {
 
@@ -26,7 +26,7 @@ public class FileManagement {
             bw = new BufferedWriter(fw);
             bw.write(content);
 
-            System.out.print("\nThe following event was saved: " + content);
+            System.out.print("\nThe following event was saved: " + content + HOME);
 
         } catch (IOException e) {
 
