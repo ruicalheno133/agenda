@@ -9,7 +9,7 @@ Follow this steps:
 # Aliases 
 
 To ease the use of the agenda in terminal, I recommend the use of this aliases:
-- alias delAllEvents="java -cp PATH/to/Agenda Main clearall"
-- alias showAllEvents="java -cp PATH/to/Agenda Main showall"
-- alias addEvent="java -cp PATH/to/Agenda Main add"
-- alias delEvent="java -cp PATH/to/Agenda Main delete"
+- alias delAllEvents="java -cp ~/Agenda Main clearall"
+- alias showAllEvents="java -cp ~/Agenda Main showall"
+- alias addEvent="java -cp ~/Agenda Main add"
+- alias delEvent="java -cp ~/Agenda Main delete"
