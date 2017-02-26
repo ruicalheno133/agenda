@@ -108,7 +108,7 @@ public class FileManagement {
         int i;
         File original = new File(FILENAME);
         File aux = new File(FILENAME_AUX);
-        private deleted = 0;
+        int deleted = 0;
 
         try {
 
@@ -164,7 +164,7 @@ public class FileManagement {
             }
 
         }
-      if (deleted == 0) System.out.println("\nThe Event was not found")
+      if (deleted == 0) System.out.println("\nThe Event was not found.");
       aux.renameTo(original);
 	}
 	
