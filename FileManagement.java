@@ -26,7 +26,7 @@ public class FileManagement {
             bw = new BufferedWriter(fw);
             bw.write(content);
 
-            System.out.print("\nThe following event was saved: " + content + HOME);
+            System.out.print("\nThe following event was saved: " + content);
 
         } catch (IOException e) {
 
