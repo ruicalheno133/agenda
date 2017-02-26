@@ -3,6 +3,8 @@ A simple and easy-to-use agenda to use in your terminal.
 
 # Installation
 Follow this steps:
+- Run make install
+- Create the aliases (not mandatory)
 
 # Usage
 
