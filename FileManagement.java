@@ -108,6 +108,7 @@ public class FileManagement {
         int i;
         File original = new File(FILENAME);
         File aux = new File(FILENAME_AUX);
+        private deleted = 0;
 
         try {
 
@@ -127,7 +128,8 @@ public class FileManagement {
                 for (i = 0; i < sCurrentLine.length() && sCurrentLine.charAt(i) != '>' ; i++);
                 auxLine= sCurrentLine.substring(0,i-1);
             	if (auxLine.equals(descricao)) {
-                    System.out.println("Sucessfuly deleted the following Event: " + sCurrentLine);
+                    System.out.println("\nSucessfuly deleted the following Event: " + sCurrentLine);
+                    deleted = 1;
             	} else {
             		bw.write(sCurrentLine + "\n");
             		
@@ -162,6 +164,7 @@ public class FileManagement {
             }
 
         }
+      if (deleted == 0) System.out.println("\nThe Event was not found")
       aux.renameTo(original);
 	}
 	
