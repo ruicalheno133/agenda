@@ -1,0 +1,26 @@
+#################  HELP  ###################
+############################################
+################  ALIASES  #################
+############################################
+#                                          #
+#         Use the following alias:         #
+# alias agenda = "java -cp ~/Agenda/ Main" #
+#                                          #
+################  COMMANDS  ################
+#                                          #
+#            Agenda show <event>           #
+#     Search for an event and print it     #
+#                                          #
+#           Agenda showall <event>         #
+#             Print all events             #
+#                                          #
+#  Agenda add <day> <month> <year> <event> #
+#       Add an event to your agenda        #
+#                                          #
+#          Agenda clear <event>            #
+#            Delete an event               #
+#                                          #
+#             Agenda clearall              #
+#          Delete all the events           #
+#                                          #
+############################################
