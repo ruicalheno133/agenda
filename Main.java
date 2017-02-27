@@ -15,7 +15,6 @@ public class Main
         switch(args[0]){
             case "add": {
                 calendario.add_Event(Integer.parseInt(args[1]),Integer.parseInt(args[2]),Integer.parseInt(args[3]),args[4]);
-               // calendario.get_Event(args[4]);
                 break;
             }
             case "showall": {
@@ -23,15 +22,15 @@ public class Main
                 break;
             }
             case "clearall": {
-                calendario.clear_Events();
+                calendario.clear_All_Events();
                 break;
             }
             case "show": {
                 calendario.get_Event(args[1]);
                 break;
             }
-            case "delete": {
-                calendario.delete_Event(args[1]);
+            case "clear": {
+                calendario.clear_Event(args[1]);
                 break;
             }
             default: System.out.println("foda-se");

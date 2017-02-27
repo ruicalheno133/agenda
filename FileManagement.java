@@ -98,10 +98,10 @@ public class FileManagement {
             }
 
         }
-        if (found == 0) System.out.println("\n The requested event was not found")
+        if (found == 0) System.out.println("\n The requested event was not found");
 	}
 
-	public static void delete_One_From_File(String descricao) {
+	public static void clear_One_From_File(String descricao) {
 		BufferedReader br = null;
         FileReader fr = null;
         BufferedWriter bw = null;
@@ -212,7 +212,7 @@ public class FileManagement {
         }
     }
 
-    public static void delete_All () {
+    public static void clear_All () {
         try {
             PrintWriter pw = new PrintWriter(FILENAME);
             pw.close();

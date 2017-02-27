@@ -45,8 +45,8 @@ public class Agenda
         FileManagement.write_On_File(dia, mes, ano, descricao);
     }
 
-    public void clear_Events() {
-        FileManagement.delete_All();
+    public void clear_All_Events() {
+        FileManagement.clear_All();
     }
 
     public void get_All() {
@@ -59,9 +59,9 @@ public class Agenda
         FileManagement.read_One_From_File(descricao);
     }
 
-    public void delete_Event(String descricao)
+    public void clear_Event(String descricao)
     {
-        FileManagement.delete_One_From_File(descricao);
+        FileManagement.clear_One_From_File(descricao);
     }
 
 }
