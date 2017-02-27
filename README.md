@@ -8,11 +8,11 @@ Follow this steps:
 
 # Usage
 
-- Agenda show (event)                      Search for an event and print it     
-- Agenda showall                           Print all events             
-- Agenda add (day) (month) (year) (event)  Add an event to your agenda        
-- Agenda clear (event)                     Delete an event               
-- Agenda clearall                          Delete all the events           
+- Agenda show (event) ----------------------- Search for an event and print it     
+- Agenda showall ---------------------------- Print all events             
+- Agenda add (day) (month) (year) (event) --- Add an event to your agenda        
+- Agenda clear (event) ---------------------- Delete an event               
+- Agenda clearall --------------------------- Delete all the events           
                                          
 # Aliases 
 
