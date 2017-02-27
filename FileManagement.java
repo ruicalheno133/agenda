@@ -54,7 +54,7 @@ public class FileManagement {
 	public static void read_One_From_File (String descricao) {
 		BufferedReader br = null;
         FileReader fr = null;
-        int i;
+        int i, found = 0;
 
         try {
 
@@ -70,8 +70,8 @@ public class FileManagement {
                 for (i = 0; i < sCurrentLine.length() && sCurrentLine.charAt(i) != '>' ; i++);
                 auxLine= sCurrentLine.substring(0,i-1);
             	if (auxLine.equals(descricao)) {
-            		System.out.println(sCurrentLine);
-            		break; // tirar eventualmente
+                    found = 1;
+            		System.out.println("\nShowing the requested event: " + sCurrentLine);
             	}
 
             }
@@ -98,6 +98,7 @@ public class FileManagement {
             }
 
         }
+        if (found == 0) System.out.println("\n The requested event was not found")
 	}
 
 	public static void delete_One_From_File(String descricao) {
