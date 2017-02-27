@@ -27,6 +27,6 @@ clean:
 	else \
 		rm ~/Agenda/*;\
 		rmdir ~/Agenda;\
+		echo "Agenda was removed";\
 	fi
 
-	@echo "Agenda was removed"
