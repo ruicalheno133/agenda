@@ -49,8 +49,11 @@ public class Agenda
         FileManagement.clear_All();
     }
 
-    public void get_All() {
-        FileManagement.write_All();
+    public void get_All(int x) {
+        if (x == 0)
+            FileManagement.write_All(0);
+        else
+            FileManagement.write_All(1);
     }
 
     

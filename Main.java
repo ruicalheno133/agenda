@@ -18,7 +18,7 @@ public class Main
                 break;
             }
             case "showall": {
-                calendario.get_All();
+                calendario.get_All(0);
                 break;
             }
             case "clearall": {
@@ -33,7 +33,11 @@ public class Main
                 calendario.clear_Event(args[1]);
                 break;
             }
-            default: System.out.println("foda-se");
+            case "help": {
+                calendario.get_All(1);
+                break;
+            }
+            default: System.out.println("\nRequest could not be found.\nUse help to see the existing commands.");
                      break;
         }
     }

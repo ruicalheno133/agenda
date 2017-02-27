@@ -11,6 +11,7 @@ public class FileManagement {
     private static String HOME = System.getProperty("user.home");
 	private static String FILENAME = HOME + "/Agenda/events.txt";
 	private static String FILENAME_AUX = HOME + "/Agenda/aux.txt";
+    private static String FILENAME_HELP = HOME + "/Agenda/help.txt";
 
 	public static void write_On_File (int dia , int mes, int ano , String descricao) {
 
@@ -98,7 +99,7 @@ public class FileManagement {
             }
 
         }
-        if (found == 0) System.out.println("\n The requested event was not found");
+        if (found == 0) System.out.println("\nThe requested event was not found");
 	}
 
 	public static void clear_One_From_File(String descricao) {
@@ -169,10 +170,13 @@ public class FileManagement {
       aux.renameTo(original);
 	}
 	
-	public static void write_All(){
+	public static void write_All(int help){
 
         BufferedReader br = null;
         FileReader fr = null;
+
+        if (help == 1)
+            FILENAME = FILENAME_HELP;
 
         try {
 
@@ -182,12 +186,11 @@ public class FileManagement {
             String sCurrentLine;
 
             br = new BufferedReader(new FileReader(FILENAME));
-
-            System.out.println("\n< Presenting All Events >\n");
+            if (help == 0) System.out.println("\n< Presenting All Events >\n");
             while ((sCurrentLine = br.readLine()) != null) {
                 System.out.println(sCurrentLine);
             }
-            System.out.println("\n<          Done         >");
+            if (help == 0) System.out.println("\n<          Done         >");
 
         } catch (IOException e) {
 
